@@ -1,4 +1,4 @@
 readr
 =====
 
-Google Reader API
+Unofficial experimental Java interface Google Reader API
