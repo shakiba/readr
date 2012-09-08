@@ -1,10 +1,9 @@
-readr
-=====
+# readr
 
 Unofficial experimental Java interface Google Reader API
 
-Design
-==
+#### Design
+
 
 There is a class for each request type and there are two request super type: Atom, API0.
 
