@@ -4,7 +4,6 @@ Unofficial experimental Java interface Google Reader API
 
 #### Design
 
-
 There is a class for each request type and there are two request super type: Atom, API0.
 
 To execute a request first you need to create a new request object and provide required and optional parameters.
@@ -39,6 +38,13 @@ Common requests parameters are encapsulated in param-set classes and are added t
 
      req.psStream.setContinuation(...);
      
-TODO
-==
+#### Credit/Acknowledgments
+
+[google-reader-api](http://code.google.com/p/google-reader-api/) documentation has been extensively used.
+
+A comprehensive documentation is also available here: http://undoc.in/googlereader.html
+
+
+#### TODO
+
 Test classes are incomplete.
