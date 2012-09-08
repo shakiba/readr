@@ -4,11 +4,9 @@ import org.testng.annotations.Test;
 
 import x.readr.test.GenericRequestTest;
 
-
 @Test
 public class MeTest extends GenericRequestTest {
 
-    @Test
     public void test() throws Exception {
         System.out.println(me());
     }

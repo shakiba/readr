@@ -6,4 +6,5 @@ import java.util.List;
 public class Api0StreamItemsId {
 
     public List<Api0ItemRef> itemRefs = new ArrayList<Api0ItemRef>();
+
 }

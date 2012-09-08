@@ -11,8 +11,7 @@ public class Api0ItemRef {
      * publish/update time.)
      */
     public long timestampUsec;
-
     public ItemId id;
-
     public List<String> directStreamIds;
+
 }

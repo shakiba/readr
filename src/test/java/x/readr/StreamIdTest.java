@@ -1,12 +1,10 @@
 package x.readr;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
-
+@Test
 public class StreamIdTest {
-    public static void main(String[] args) throws Exception {
-        new StreamIdTest().test();
-    }
 
     public void test() throws Exception {
         Assert.assertTrue(StreamId.id("user/00000000000000000001/label/X")

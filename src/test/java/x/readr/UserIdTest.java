@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 @Test
 public class UserIdTest {
 
-    @Test
     public void test() {
         Long[] signeds = { Long.MAX_VALUE, 1L, 0L, -1L, Long.MIN_VALUE };
         for (Long s1 : signeds) {

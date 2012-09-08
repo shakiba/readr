@@ -3,15 +3,9 @@ package x.readr;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
 @Test
 public class ItemIdTest {
 
-    public static void main(String[] args) {
-        new ItemIdTest().test();
-    }
-
-    @Test
     public void test() {
         String[] s = (Long.MAX_VALUE + " " + 1 + " " + 0 + " " + -1 + " " + Long.MIN_VALUE)
                 .split("\\s");

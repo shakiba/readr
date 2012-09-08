@@ -1,9 +1,7 @@
 package x.readr.api0;
 
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
-import x.readr.ItemId;
 import x.readr.ItemIdShort;
 import x.readr.StreamId;
 import x.readr.StreamIdUserLabel;
@@ -15,24 +13,22 @@ import x.readr.api0.req.read.TagList;
 import x.readr.api0.req.write.DisableTag;
 import x.readr.api0.req.write.EditTag;
 import x.readr.test.GenericRequestTest;
+import x.readr.test.Sample;
 
-@Test(singleThreaded = true)
+//@Test(singleThreaded = true)
 public class TagTest extends GenericRequestTest {
 
     ItemIdShort itemId;
     String tagName;
     StreamIdUserLabel tagId;
 
-    @Test
     public TagTest prepare() throws Exception {
-        itemId = ItemId.fromLong(
-                "tag:google.com,2005:reader/item/c1dd05699f169e3c").toShort();
+        itemId = Sample._98.toShort();
         tagName = "readr-" + System.currentTimeMillis();
         tagId = StreamId.label(tagName);
         return this;
     }
 
-    @Test
     public TagTest before() throws Exception {
 
         new EditTag(itemId, actionToken()).add(tagId).execute(oauth);
@@ -51,7 +47,6 @@ public class TagTest extends GenericRequestTest {
         return this;
     }
 
-    @Test
     public TagTest after() {
         new EditTag(itemId, actionToken()).remove(tagId).execute(oauth);
 

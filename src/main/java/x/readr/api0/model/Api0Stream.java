@@ -5,25 +5,16 @@ import java.util.List;
 
 import x.readr.StreamId;
 
-
 public class Api0Stream {
 
     public String direction;
-
     public StreamId id;
-
     public String title;
-
     public String description;
-
     public String continuation;
-
     public List<Api0Link> self;
-
     public List<Api0Link> alternate;
-
     public long updated;
-
     public List<Api0Item> items = new ArrayList<Api0Item>();
 
     public String alternate() {
@@ -32,4 +23,5 @@ public class Api0Stream {
         }
         return null;
     }
+
 }
