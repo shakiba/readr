@@ -11,13 +11,13 @@ To execute a request first you need to create a new request object and provide r
 
     StreamContent req = new StreamContent(StreamId.feed("http://example.com/rss"));
 
-To execute it you need a connection. There two type of connections: simple and authenticated. Some requests require authenticated connection to execute.
+To execute it you need a connection. There are two type of connections: simple and authenticated. Some requests require authenticated connection to be executed.
 
     ApacheHttpClient4Connection simpleConn = new ApacheHttpClient4Connection(2);
     // or
     OAuthSribeConnection oauthConn = new OAuthSribeConnection(...);
     
-Then to execute:
+Then to execute it:
 
     Api0Stream stream = req.execute(simpleConn);
     
