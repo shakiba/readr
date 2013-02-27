@@ -4,7 +4,8 @@ Unofficial experimental Google Reader API for Java
 
 #### Design
 
-There is a class for each request type and there are two global request super type: Atom and API0.
+There is a class for each request type and there are two global request super type: API0 and Atom.
+You can view list of currently available [API0 requests](src/main/java/x/readr/api0/req/) and [Atom requests](src/main/java/x/readr/atom/req/).
 
 To execute a request first you need to create a new request object and provide required and optional parameters.
 
