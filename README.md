@@ -1,16 +1,16 @@
 # readr
 
-Unofficial experimental Java interface Google Reader API
+Unofficial experimental Google Reader API for Java
 
 #### Design
 
-There is a class for each request type and there are two request super type: Atom, API0.
+There is a class for each request type and there are two global request super type: Atom and API0.
 
 To execute a request first you need to create a new request object and provide required and optional parameters.
 
     StreamContent req = new StreamContent(StreamId.feed("http://example.com/rss"));
 
-To execute it you need a connection. There two type of connection: normal and authenticated connection. Some requests require authenticated connection to execute.
+To execute it you need a connection. There two type of connections: simple and authenticated. Some requests require authenticated connection to execute.
 
     ApacheHttpClient4Connection simpleConn = new ApacheHttpClient4Connection(2);
     // or
