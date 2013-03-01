@@ -9,7 +9,7 @@
 
     <groupId>me.shakiba.readr</groupId>
     <artifactId>readr</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.1.0</version>
     <packaging>jar</packaging>
     <name>readr</name>
     <description>Unofficial experimental Google Reader API for Java</description>
