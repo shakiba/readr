@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import me.shakiba.readr.StreamIdFeed;
-import me.shakiba.readr.StreamIdUserLabel;
+import me.shakiba.readr.model.StreamIdFeed;
+import me.shakiba.readr.model.StreamIdUserLabel;
 import me.shakiba.readr.req.AbstractApi0JsonRequest;
 import me.shakiba.readr.req.AbstractAuthedConnection;
 import me.shakiba.readr.req.Params;

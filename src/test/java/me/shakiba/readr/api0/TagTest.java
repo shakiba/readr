@@ -1,8 +1,5 @@
 package me.shakiba.readr.api0;
 
-import me.shakiba.readr.ItemIdShort;
-import me.shakiba.readr.StreamId;
-import me.shakiba.readr.StreamIdUserLabel;
 import me.shakiba.readr.api0.model.Api0Stream;
 import me.shakiba.readr.api0.model.Api0Tag;
 import me.shakiba.readr.api0.model.Api0TagList;
@@ -10,6 +7,9 @@ import me.shakiba.readr.api0.req.read.ItemContent;
 import me.shakiba.readr.api0.req.read.TagList;
 import me.shakiba.readr.api0.req.write.DisableTag;
 import me.shakiba.readr.api0.req.write.EditTag;
+import me.shakiba.readr.model.ItemIdShort;
+import me.shakiba.readr.model.StreamId;
+import me.shakiba.readr.model.StreamIdUserLabel;
 import me.shakiba.readr.test.GenericRequestTest;
 import me.shakiba.readr.test.Sample;
 

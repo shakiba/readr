@@ -1,4 +1,4 @@
-package me.shakiba.readr;
+package me.shakiba.readr.model;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

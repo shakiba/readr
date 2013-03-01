@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.UUID;
 
-import me.shakiba.readr.StreamId;
-import me.shakiba.readr.StreamIdUser;
-import me.shakiba.readr.UserId;
 import me.shakiba.readr.api0.model.Api0Stream;
+import me.shakiba.readr.model.StreamId;
+import me.shakiba.readr.model.StreamIdUser;
+import me.shakiba.readr.model.UserId;
 import me.shakiba.readr.req.AbstractApi0JsonRequest;
 import me.shakiba.readr.req.AbstractAuthedConnection;
 import me.shakiba.readr.req.Params;

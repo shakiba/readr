@@ -2,8 +2,8 @@ package me.shakiba.readr.api0.model;
 
 import java.util.List;
 
-import me.shakiba.readr.ItemId;
-import me.shakiba.readr.StreamId;
+import me.shakiba.readr.model.ItemId;
+import me.shakiba.readr.model.StreamId;
 
 public class Api0Item {
 

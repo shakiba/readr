@@ -1,6 +1,6 @@
 package me.shakiba.readr.api0.params;
 
-import me.shakiba.readr.StreamId;
+import me.shakiba.readr.model.StreamId;
 import me.shakiba.readr.req.AbstractRequest;
 import me.shakiba.readr.req.RequestParam;
 

@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 
 import javax.xml.bind.JAXBException;
 
-import me.shakiba.readr.StreamId;
 import me.shakiba.readr.api0.params.PsStream;
 import me.shakiba.readr.atom.model.Feed;
+import me.shakiba.readr.model.StreamId;
 import me.shakiba.readr.req.AbstractAtomRequest;
 import me.shakiba.readr.req.AbstractConnection;
 import me.shakiba.readr.req.Params;

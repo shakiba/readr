@@ -3,10 +3,10 @@ package me.shakiba.readr.api0.req.read;
 import java.io.IOException;
 import java.io.InputStream;
 
-import me.shakiba.readr.StreamId;
 import me.shakiba.readr.api0.model.Api0Stream;
 import me.shakiba.readr.api0.params.PsContent;
 import me.shakiba.readr.api0.params.PsStream;
+import me.shakiba.readr.model.StreamId;
 import me.shakiba.readr.req.AbstractApi0JsonRequest;
 import me.shakiba.readr.req.AbstractConnection;
 import me.shakiba.readr.req.Params;

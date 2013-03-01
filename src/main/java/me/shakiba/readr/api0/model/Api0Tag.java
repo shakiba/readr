@@ -1,6 +1,6 @@
 package me.shakiba.readr.api0.model;
 
-import me.shakiba.readr.StreamId;
+import me.shakiba.readr.model.StreamId;
 
 public class Api0Tag {
 

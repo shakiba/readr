@@ -5,9 +5,9 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 
-import me.shakiba.readr.StreamId;
 import me.shakiba.readr.api0.model.Api0StreamItemsId;
 import me.shakiba.readr.api0.params.PsStream;
+import me.shakiba.readr.model.StreamId;
 import me.shakiba.readr.req.AbstractApi0JsonRequest;
 import me.shakiba.readr.req.AbstractConnection;
 import me.shakiba.readr.req.Params;

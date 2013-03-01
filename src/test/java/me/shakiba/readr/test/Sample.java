@@ -1,8 +1,8 @@
 package me.shakiba.readr.test;
 
-import me.shakiba.readr.ItemId;
-import me.shakiba.readr.StreamId;
-import me.shakiba.readr.StreamIdFeed;
+import me.shakiba.readr.model.ItemId;
+import me.shakiba.readr.model.StreamId;
+import me.shakiba.readr.model.StreamIdFeed;
 
 public class Sample {
     public final static StreamIdFeed feed = StreamId

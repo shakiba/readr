@@ -2,7 +2,7 @@ package me.shakiba.readr.api0.model;
 
 import java.util.List;
 
-import me.shakiba.readr.ItemId;
+import me.shakiba.readr.model.ItemId;
 
 public class Api0ItemRef {
 

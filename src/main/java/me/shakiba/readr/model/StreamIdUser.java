@@ -1,4 +1,4 @@
-package me.shakiba.readr;
+package me.shakiba.readr.model;
 
 public abstract class StreamIdUser extends StreamId {
     protected StreamIdUser(String id) {

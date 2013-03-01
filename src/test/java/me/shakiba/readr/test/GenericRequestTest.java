@@ -4,12 +4,12 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import me.shakiba.readr.ItemId;
-import me.shakiba.readr.StreamId;
-import me.shakiba.readr.UserId;
 import me.shakiba.readr.api0.req.read.ActionToken;
 import me.shakiba.readr.api0.req.read.WhoAmI;
 import me.shakiba.readr.atom.model.Feed;
+import me.shakiba.readr.model.ItemId;
+import me.shakiba.readr.model.StreamId;
+import me.shakiba.readr.model.UserId;
 import me.shakiba.readr.req.AbstractApi0JsonRequest.ItemIdTypeAdapter;
 import me.shakiba.readr.req.AbstractApi0JsonRequest.StreamIdTypeAdapter;
 import me.shakiba.readr.req.AbstractConnection;

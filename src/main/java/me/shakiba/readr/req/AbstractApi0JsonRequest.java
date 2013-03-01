@@ -5,9 +5,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 
-import me.shakiba.readr.ItemId;
-import me.shakiba.readr.StreamId;
 import me.shakiba.readr.api0.params.PsApi0;
+import me.shakiba.readr.model.ItemId;
+import me.shakiba.readr.model.StreamId;
 
 import org.apache.log4j.Logger;
 

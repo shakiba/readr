@@ -1,4 +1,4 @@
-package me.shakiba.readr;
+package me.shakiba.readr.model;
 
 import java.math.BigInteger;
 import java.text.DecimalFormat;

@@ -1,4 +1,4 @@
-package me.shakiba.readr;
+package me.shakiba.readr.model;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

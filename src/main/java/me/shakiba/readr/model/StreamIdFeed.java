@@ -1,4 +1,4 @@
-package me.shakiba.readr;
+package me.shakiba.readr.model;
 
 public class StreamIdFeed extends StreamId {
     StreamIdFeed(String url) {
