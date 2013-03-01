@@ -10,11 +10,10 @@ import me.shakiba.readr.StreamId;
 import me.shakiba.readr.api0.params.PsStream;
 import me.shakiba.readr.atom.model.Feed;
 import me.shakiba.readr.req.AbstractAtomRequest;
-import me.shakiba.readr.req.AbstractAuthedConnection;
+import me.shakiba.readr.req.AbstractConnection;
 import me.shakiba.readr.req.Params;
 
-public class AtomStream extends
-        AbstractAtomRequest<Feed, AbstractAuthedConnection> {
+public class AtomStream extends AbstractAtomRequest<Feed, AbstractConnection> {
 
     private final StreamId stream;
 

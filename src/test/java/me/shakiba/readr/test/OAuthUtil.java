@@ -30,6 +30,7 @@ public class OAuthUtil {
 
     public static void main(String[] args) throws Exception {
         new OAuthUtil().load(true);
+        System.out.println("Everything seems ok!");
     }
 
     public OAuthUtil load(boolean prompt) {
@@ -38,24 +39,13 @@ public class OAuthUtil {
                 throw new RuntimeException(
                         "Missing consumer key and/or secret.");
             }
+            oauth = new ServiceBuilder().provider(GoogleApi.class).apiKey(key)
+                    .apiSecret(secret).scope(OAuthSribeConnection.SCOPE)
+                    .build();
             if (!loadAccess(prompt)) {
                 throw new RuntimeException(
                         "Missing access token and/or secret.");
             }
-
-            System.out.println(key);
-            System.out.println(secret);
-            System.out.println(accToken);
-            System.out.println(accSecret);
-
-            // try {
-            // System.out.println(Arrays.toString(node.childrenNames()));
-            // } catch (BackingStoreException e) {
-            // e.printStackTrace();
-            // }
-            oauth = new ServiceBuilder().provider(GoogleApi.class).apiKey(key)
-                    .apiSecret(secret).scope(OAuthSribeConnection.SCOPE)
-                    .build();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -63,17 +53,17 @@ public class OAuthUtil {
     }
 
     private boolean loadConsumer(boolean prompt) throws IOException {
-        Preferences node = Preferences.userRoot().node(NODE);
-        if (node == null) {
+        Preferences node = node();
+        if (node == null || (key = node.get(CONSUMER_KEY, null)) == null
+                || (secret = node.get(CONSUMER_SECRET, null)) == null) {
             if (prompt) {
-                saveConsumer(readLine("Enter consumer key:").trim(),
-                        readLine("Enter consumer secret:").trim());
+                saveConsumer(key = readLine("Enter consumer key:").trim(),
+                        secret = readLine("Enter consumer secret:").trim());
+                node = node();
             } else {
                 return false;
             }
         }
-        key = node.get(CONSUMER_KEY, null);
-        secret = node.get(CONSUMER_SECRET, null);
         if (key == null || secret == null) {
             return false;
         }
@@ -81,29 +71,31 @@ public class OAuthUtil {
     }
 
     private boolean loadAccess(boolean prompt) throws IOException {
-        Preferences node = Preferences.userRoot().node(NODE);
-        if (node == null) {
+        Preferences node = node();
+        if (node == null || (accToken = node.get(ACCESS_TOKEN, null)) == null
+                || (accSecret = node.get(ACCESS_SECRET, null)) == null) {
             if (prompt) {
                 Token requestToken = oauth.getRequestToken();
                 System.out.println("Request token: " + requestToken);
-                System.out.println("Auth url: "
-                        + oauth.getAuthorizationUrl(requestToken));
+                System.out.println(oauth.getAuthorizationUrl(requestToken));
 
                 String verifier = readLine("Visit auth url and enter verifier:")
                         .trim();
                 Token accessToken = oauth.getAccessToken(requestToken,
                         new Verifier(verifier));
+                key = accessToken.getToken();
+                secret = accessToken.getSecret();
 
-                System.out.println("access_token=" + accessToken.getToken());
-                System.out.println("access_secret=" + accessToken.getSecret());
+                System.out.println(ACCESS_TOKEN + "=" + key);
+                System.out.println(ACCESS_SECRET + "=" + secret);
 
                 saveAccess(accessToken.getToken(), accessToken.getSecret());
+                node = node();
             } else {
                 return false;
             }
         }
-        accToken = node.get(ACCESS_TOKEN, null);
-        accSecret = node.get(ACCESS_SECRET, null);
+
         if (accToken == null || accSecret == null) {
             return false;
         }
@@ -134,6 +126,10 @@ public class OAuthUtil {
             System.out.println(e);
             System.out.println("Unable to save to user preferences!");
         }
+    }
+
+    private Preferences node() {
+        return Preferences.userRoot().node(NODE);
     }
 
     private static String readLine(String msg) throws IOException {

@@ -69,16 +69,8 @@
             <artifactId>guava</artifactId>
             <version>14.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>org.eclipse.persistence.moxy</artifactId>
-            <version>2.3.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.findbugs</groupId>
-            <artifactId>jsr305</artifactId>
-            <version>2.0.1</version>
-        </dependency>
+        <!-- <dependency> <groupId>org.eclipse.persistence</groupId> <artifactId>org.eclipse.persistence.moxy</artifactId> 
+            <version>2.3.0</version> </dependency> -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -119,12 +111,7 @@
         </profile>
     </profiles>
 
-    <repositories>
-        <repository>
-            <id>EclipseLink Repo</id>
-            <url>http://download.eclipse.org/rt/eclipselink/maven.repo</url>
-            <!-- use this for javax.persistence <snapshots> <enabled>true</enabled> </snapshots> -->
-        </repository>
-    </repositories>
+    <!-- <repositories> <repository> <id>EclipseLink Repo</id> <url>http://download.eclipse.org/rt/eclipselink/maven.repo</url> 
+        use this for javax.persistence <snapshots> <enabled>true</enabled> </snapshots> </repository> </repositories> -->
 
 </project>
