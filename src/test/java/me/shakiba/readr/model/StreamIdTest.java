@@ -14,7 +14,6 @@ public class StreamIdTest {
         Assert.assertEquals(StreamId.label("X").forUser(UserId.fromLong(1L))
                 .toString(), "user/00000000000000000001/label/X");
         Assert.assertEquals(StreamId.label("X").forUser(UserId.fromLong(-1L))
-                .toString(), "user/00000000000000000001/label/X");
-
+                .toString(), "user/18446744073709551615/label/X");
     }
 }
