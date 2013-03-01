@@ -12,7 +12,6 @@ import me.shakiba.readr.req.AbstractApi0JsonRequest;
 import me.shakiba.readr.req.AbstractConnection;
 import me.shakiba.readr.req.Params;
 
-
 /**
  * Given a collection of ItemIds and fetching options, returns the contents of
  * those items.

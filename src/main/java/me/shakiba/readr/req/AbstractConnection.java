@@ -11,7 +11,6 @@ import me.shakiba.readr.req.AbstractRequest.Method;
 
 import org.apache.log4j.Logger;
 
-
 public abstract class AbstractConnection {
     public final <T> T execute(AbstractRequest<T, ?> req) {
         String url = req.getUrl0();

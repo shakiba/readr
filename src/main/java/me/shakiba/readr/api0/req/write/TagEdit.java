@@ -9,8 +9,6 @@ import me.shakiba.readr.req.AbstractApi0JsonRequest;
 import me.shakiba.readr.req.AbstractAuthedConnection;
 import me.shakiba.readr.req.Params;
 
-
-
 /**
  * POST /reader/api/0/tag/edit
  */

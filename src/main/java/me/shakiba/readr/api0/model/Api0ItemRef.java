@@ -4,7 +4,6 @@ import java.util.List;
 
 import me.shakiba.readr.ItemId;
 
-
 public class Api0ItemRef {
 
     /**

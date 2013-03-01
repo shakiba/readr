@@ -8,7 +8,6 @@ import me.shakiba.readr.req.AbstractApi0JsonRequest;
 import me.shakiba.readr.req.AbstractAuthedConnection;
 import me.shakiba.readr.req.Params;
 
-
 /**
  * Get the subscription list and shared status for each tag.
  * <p>

@@ -6,8 +6,6 @@ import javax.xml.bind.Unmarshaller;
 
 import me.shakiba.readr.atom.model.Feed;
 
-
-
 public abstract class AbstractAtomRequest<T, C extends AbstractConnection>
         extends AbstractRequest<T, C> {
 

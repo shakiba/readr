@@ -4,7 +4,6 @@ import java.util.List;
 
 import me.shakiba.readr.StreamId;
 
-
 public class Api0Subscription {
 
     public StreamId id;

@@ -13,8 +13,6 @@ import me.shakiba.readr.req.AbstractAtomRequest;
 import me.shakiba.readr.req.AbstractAuthedConnection;
 import me.shakiba.readr.req.Params;
 
-
-
 public class AtomStream extends
         AbstractAtomRequest<Feed, AbstractAuthedConnection> {
 

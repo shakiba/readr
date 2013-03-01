@@ -8,8 +8,6 @@ import me.shakiba.readr.req.AbstractApi0JsonRequest;
 import me.shakiba.readr.req.AbstractAuthedConnection;
 import me.shakiba.readr.req.Params;
 
-
-
 /**
  * Get all the information about where are located (in term of subscriptions and
  * tags/folders) the unread items.

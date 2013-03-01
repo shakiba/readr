@@ -8,7 +8,6 @@ import me.shakiba.readr.req.AbstractApi0JsonRequest;
 import me.shakiba.readr.req.AbstractConnection;
 import me.shakiba.readr.req.Params;
 
-
 /**
  * Authed? No.
  */

@@ -7,8 +7,6 @@ import me.shakiba.readr.req.AbstractApi0JsonRequest;
 import me.shakiba.readr.req.AbstractAuthedConnection;
 import me.shakiba.readr.req.Params;
 
-
-
 /**
  * To protect against XSRF attacks, all state-changing methods require an action
  * token in addition to an authentication token. The token can be fetched by

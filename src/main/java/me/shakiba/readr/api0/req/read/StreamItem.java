@@ -12,7 +12,6 @@ import me.shakiba.readr.req.AbstractApi0JsonRequest;
 import me.shakiba.readr.req.AbstractConnection;
 import me.shakiba.readr.req.Params;
 
-
 /**
  * Given one or more StreamIds and fetching options, returns the IDs of the
  * items in those Streams. Getting just item IDs is significantly cheaper than

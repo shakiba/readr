@@ -1,6 +1,7 @@
 package me.shakiba.readr.req;
 
-public abstract class RequestParam<T extends AbstractRequest<?, ?>> extends Params {
+public abstract class RequestParam<T extends AbstractRequest<?, ?>> extends
+        Params {
 
     protected final T wrapper;
 

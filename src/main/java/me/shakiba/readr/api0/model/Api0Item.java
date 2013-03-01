@@ -5,7 +5,6 @@ import java.util.List;
 import me.shakiba.readr.ItemId;
 import me.shakiba.readr.StreamId;
 
-
 public class Api0Item {
 
     public long crawlTimeMsec;
