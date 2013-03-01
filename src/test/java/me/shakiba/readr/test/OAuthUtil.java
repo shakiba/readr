@@ -37,14 +37,14 @@ public class OAuthUtil {
         try {
             if (!loadConsumer(prompt)) {
                 throw new RuntimeException(
-                        "Missing consumer key and/or secret.");
+                        "Missing consumer key/secret.");
             }
             oauth = new ServiceBuilder().provider(GoogleApi.class).apiKey(key)
                     .apiSecret(secret).scope(OAuthSribeConnection.SCOPE)
                     .build();
             if (!loadAccess(prompt)) {
                 throw new RuntimeException(
-                        "Missing access token and/or secret.");
+                        "Missing access token/secret.");
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -108,10 +108,10 @@ public class OAuthUtil {
             node.put(CONSUMER_KEY, key);
             node.put(CONSUMER_SECRET, secret);
             node.flush();
-            System.out.println("Saved to user preferences.");
+            System.out.println("Consumer key/secret saved to user preferences.");
         } catch (Exception e) {
             System.out.println(e);
-            System.out.println("Unable to save to user preferences!");
+            System.out.println("Unable to save consumer key/secret to user preferences!");
         }
     }
 
@@ -121,10 +121,10 @@ public class OAuthUtil {
             node.put(ACCESS_TOKEN, token);
             node.put(ACCESS_SECRET, secret);
             node.flush();
-            System.out.println("Saved to user preferences.");
+            System.out.println("Access token/secret Saved to user preferences.");
         } catch (Exception e) {
             System.out.println(e);
-            System.out.println("Unable to save to user preferences!");
+            System.out.println("Unable to save access token/secret to user preferences!");
         }
     }
 

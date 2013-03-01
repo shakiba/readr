@@ -23,7 +23,7 @@ public class TagTest extends GenericRequestTest {
     StreamIdUserLabel tagId;
 
     public TagTest prepare() throws Exception {
-        itemId = Sample._98.toShort();
+        itemId = Sample.item1.toShort();
         tagName = "readr-" + System.currentTimeMillis();
         tagId = StreamId.label(tagName);
         return this;

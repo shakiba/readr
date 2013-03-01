@@ -9,7 +9,7 @@ import me.shakiba.readr.test.Sample;
 public class ItemContentTest extends GenericRequestTest {
 
     public void test() throws Exception {
-        Api0Stream execute = new ItemContent(true, Sample._99, Sample._98)
+        Api0Stream execute = new ItemContent(true, Sample.item1, Sample.item2)
                 .execute(simple);
         gson.toJson(execute, System.out);
     }
