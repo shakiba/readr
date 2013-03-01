@@ -10,16 +10,15 @@ import me.shakiba.readr.UserId;
 import me.shakiba.readr.api0.req.read.ActionToken;
 import me.shakiba.readr.api0.req.read.WhoAmI;
 import me.shakiba.readr.atom.model.Feed;
+import me.shakiba.readr.req.AbstractApi0JsonRequest.ItemIdTypeAdapter;
+import me.shakiba.readr.req.AbstractApi0JsonRequest.StreamIdTypeAdapter;
 import me.shakiba.readr.req.AbstractConnection;
 import me.shakiba.readr.req.ApacheHttpClient4Connection;
 import me.shakiba.readr.req.OAuthSribeConnection;
-import me.shakiba.readr.req.AbstractApi0JsonRequest.ItemIdTypeAdapter;
-import me.shakiba.readr.req.AbstractApi0JsonRequest.StreamIdTypeAdapter;
 
 import org.scribe.builder.ServiceBuilder;
 import org.scribe.builder.api.GoogleApi;
 import org.scribe.model.Token;
-
 
 import com.google.common.base.Supplier;
 import com.google.common.base.Suppliers;
@@ -28,11 +27,12 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 public class GenericRequestTest {
+    private static OAuthUtil oautil = new OAuthUtil().load(false);
 
     protected static OAuthSribeConnection oauth = new OAuthSribeConnection(
-            new ServiceBuilder().provider(GoogleApi.class)
-                    .apiKey(OAuthUtil.key).apiSecret(OAuthUtil.secret).build(),
-            new Token(OAuthUtil.accToken, OAuthUtil.accSecret));
+            new ServiceBuilder().provider(GoogleApi.class).apiKey(oautil.key)
+                    .apiSecret(oautil.secret).build(), new Token(
+                    oautil.accToken, oautil.accSecret));
 
     private static Supplier<String> actionToken = Suppliers
             .memoize(new Supplier<String>() {
@@ -50,7 +50,8 @@ public class GenericRequestTest {
                 }
             });
 
-    protected static AbstractConnection simple = new ApacheHttpClient4Connection(2);
+    protected static AbstractConnection simple = new ApacheHttpClient4Connection(
+            2);
 
     protected static Gson gson = new GsonBuilder()
             .registerTypeAdapter(ItemId.class, new ItemIdTypeAdapter())

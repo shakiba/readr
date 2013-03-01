@@ -18,7 +18,6 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
-import org.apache.log4j.Logger;
 
 public class ApacheHttpClient4Connection extends AbstractConnection {
     private HttpClient httpclient;
@@ -37,11 +36,6 @@ public class ApacheHttpClient4Connection extends AbstractConnection {
                     .getValueString()));
         }
 
-        if (logger.isDebugEnabled()) {
-            logger.debug(url);
-            logger.debug(params.posts());
-        }
-
         HttpPost post = new HttpPost(url);
         try {
             post.setEntity(new UrlEncodedFormEntity(pairs));
@@ -55,10 +49,6 @@ public class ApacheHttpClient4Connection extends AbstractConnection {
     @Override
     public <T> T get(String url, Params params, AbstractRequest<T, ?> callback) {
         url = addToUrl(url, params.gets());
-        if (logger.isDebugEnabled()) {
-            logger.debug(url);
-            logger.debug("[post params excluded] " + params.posts());
-        }
         HttpGet get = new HttpGet(url);
         T execute = execute(get, callback);
         return execute;
@@ -85,7 +75,4 @@ public class ApacheHttpClient4Connection extends AbstractConnection {
             throw new RuntimeException(e);
         }
     }
-
-    private static Logger logger = Logger
-            .getLogger(ApacheHttpClient4Connection.class);
 }

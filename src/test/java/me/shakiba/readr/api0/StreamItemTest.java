@@ -8,7 +8,7 @@ import me.shakiba.readr.test.Sample;
 public class StreamItemTest extends GenericRequestTest {
 
     public void test() throws Exception {
-        StreamItem req = new StreamItem(Sample.cnn_top, 100);
+        StreamItem req = new StreamItem(Sample.feed, 100);
         req.psStream.setNewestTime(1317146551);
         // int t = (int) (System.currentTimeMillis() / 1000 - 12 * 30 * 24 *
         // 3600);

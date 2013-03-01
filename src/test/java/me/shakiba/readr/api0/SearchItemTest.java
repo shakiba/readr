@@ -9,7 +9,7 @@ public class SearchItemTest extends GenericRequestTest {
 
     public void test() throws Exception {
         String keywords = "Iran";
-        Object execute = new SearchItemIds(keywords, Sample.cnn_top)
+        Object execute = new SearchItemIds(keywords, Sample.feed)
                 .execute(oauth);
         gson.toJson(execute, System.out);
     }

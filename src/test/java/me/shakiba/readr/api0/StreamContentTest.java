@@ -10,8 +10,8 @@ import me.shakiba.readr.test.Sample;
 public class StreamContentTest extends GenericRequestTest {
 
     public void test() throws Exception {
-        Api0Stream execute = new StreamContent(Sample.cnn_top).psStream
-                .setNumber(2).execute(simple);
+        Api0Stream execute = new StreamContent(Sample.feed).psStream.setNumber(
+                2).execute(simple);
         for (Api0Item item : execute.items) {
             System.out.println(item.id);
         }

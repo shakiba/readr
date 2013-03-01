@@ -6,7 +6,6 @@ import me.shakiba.readr.test.GenericRequestTest;
 
 import org.testng.Assert;
 
-
 //@Test
 public class FeedFinderTest extends GenericRequestTest {
 

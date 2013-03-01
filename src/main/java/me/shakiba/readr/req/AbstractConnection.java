@@ -14,13 +14,12 @@ import org.apache.log4j.Logger;
 public abstract class AbstractConnection {
     public final <T> T execute(AbstractRequest<T, ?> req) {
         String url = req.getUrl0();
-
         Params params = req.getParams0();
 
         if (logger.isDebugEnabled()) {
-            logger.debug(req.getMethod() + " " + url);
-            logger.debug(params.gets());
-            logger.debug(params.posts());
+            logger.debug("execute     " + req.getMethod() + " " + url);
+            logger.debug("get  params " + params.gets());
+            logger.debug("post params " + params.posts());
         }
 
         if (req.getMethod() == Method.GET) {

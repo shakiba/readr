@@ -1,7 +1,5 @@
 package me.shakiba.readr;
 
-import me.shakiba.readr.UserId;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

@@ -4,7 +4,6 @@ import me.shakiba.readr.test.GenericRequestTest;
 
 import org.testng.annotations.Test;
 
-
 @Test
 public class MeTest extends GenericRequestTest {
 

@@ -7,8 +7,6 @@ import java.io.OutputStream;
 import me.shakiba.readr.req.AbstractRequest;
 import me.shakiba.readr.req.AbstractRequest.Deserializer;
 
-
-
 public class SaveToStream<T> implements Deserializer<T> {
     private final OutputStream out;
 

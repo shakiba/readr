@@ -23,9 +23,6 @@ public class OAuthSribeConnection extends AbstractAuthedConnection {
 
     @Override
     public <T> T post(String url, Params params, AbstractRequest<T, ?> callback) {
-        if (logger.isDebugEnabled()) {
-            logger.debug(url);
-        }
         OAuthRequest req = new OAuthRequest(Verb.POST, url);
         for (Param param : params.gets()) {
             req.addQuerystringParameter(param.getKey(), param.getValue()
@@ -36,8 +33,6 @@ public class OAuthSribeConnection extends AbstractAuthedConnection {
         }
         if (logger.isDebugEnabled()) {
             logger.debug(req.getBodyParams().asFormUrlEncodedString());
-            logger.debug(params.gets());
-            logger.debug(params.posts());
         }
         req.getBodyContents();
         oauth.signRequest(token, req);
@@ -51,9 +46,6 @@ public class OAuthSribeConnection extends AbstractAuthedConnection {
     @Override
     public <T> T get(String url, Params params,
             final AbstractRequest<T, ?> callback) {
-        if (logger.isDebugEnabled()) {
-            logger.debug(url);
-        }
         OAuthRequest req = new OAuthRequest(Verb.GET, url);
         for (Param param : params.gets()) {
             req.addQuerystringParameter(param.getKey(), param.getValue()
@@ -61,7 +53,6 @@ public class OAuthSribeConnection extends AbstractAuthedConnection {
         }
         if (logger.isDebugEnabled()) {
             logger.debug(req.getQueryStringParams().asFormUrlEncodedString());
-            logger.debug(params.gets());
         }
 
         oauth.signRequest(token, req);

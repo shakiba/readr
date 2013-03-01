@@ -15,7 +15,6 @@ import me.shakiba.readr.test.Sample;
 
 import org.testng.Assert;
 
-
 //@Test(singleThreaded = true)
 public class TagTest extends GenericRequestTest {
 

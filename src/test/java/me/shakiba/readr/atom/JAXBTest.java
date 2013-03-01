@@ -9,7 +9,6 @@ import javax.xml.bind.Unmarshaller;
 
 import me.shakiba.readr.atom.model.Feed;
 
-
 public class JAXBTest {
 
     public static void main(String[] args) throws Exception {
