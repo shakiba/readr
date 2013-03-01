@@ -1,4 +1,4 @@
-package me.shakiba.readr.api0.req.x;
+package me.shakiba.readr.api0.req.todo;
 
 /**
  * POST /reader/api/0/edit-bundle
@@ -14,6 +14,6 @@ package me.shakiba.readr.api0.req.x;
  * streams=...
  * 
  */
-public class EditBundle {
+class EditBundle {
 
 }
