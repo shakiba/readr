@@ -13,7 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>readr</name>
-    <description></description>
+    <description>Unofficial experimental Google Reader API for Java</description>
     <url>http://github.com/shakiba/readr</url>
 
     <licenses>
