@@ -1,6 +1,6 @@
 # readr
 
-Unofficial experimental Google Reader API for Java
+Unofficial Google Reader API for Java
 
 #### Usage
 
