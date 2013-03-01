@@ -1,4 +1,4 @@
-package me.shakiba.readr.test;
+package me.shakiba.readr;
 
 import java.io.BufferedReader;
 import java.io.IOException;

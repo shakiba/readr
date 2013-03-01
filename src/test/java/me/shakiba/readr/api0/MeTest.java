@@ -1,6 +1,6 @@
 package me.shakiba.readr.api0;
 
-import me.shakiba.readr.test.GenericRequestTest;
+import me.shakiba.readr.GenericRequestTest;
 
 import org.testng.annotations.Test;
 

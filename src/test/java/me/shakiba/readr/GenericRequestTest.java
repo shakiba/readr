@@ -1,4 +1,4 @@
-package me.shakiba.readr.test;
+package me.shakiba.readr;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

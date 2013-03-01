@@ -1,4 +1,4 @@
-package me.shakiba.readr.test;
+package me.shakiba.readr;
 
 import me.shakiba.readr.model.ItemId;
 import me.shakiba.readr.model.StreamId;

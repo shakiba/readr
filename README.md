@@ -39,6 +39,18 @@ Common requests parameters are encapsulated in param-set classes and are added t
 
      req.psStream.setContinuation(...);
      
+#### Maven
+
+Simply add it to your Maven project dependencies.
+
+```xml
+<dependency>
+    <groupId>me.shakiba.readr</groupId>
+    <artifactId>readr</artifactId>
+    <version>0.1.0</version>
+</dependency>
+```
+
 #### Credit/Acknowledgments
 
 [google-reader-api](http://code.google.com/p/google-reader-api/) documentation has been extensively used.

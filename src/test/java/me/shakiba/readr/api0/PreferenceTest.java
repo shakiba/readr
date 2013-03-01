@@ -1,8 +1,8 @@
 package me.shakiba.readr.api0;
 
+import me.shakiba.readr.GenericRequestTest;
 import me.shakiba.readr.api0.model.Api0Prefs;
 import me.shakiba.readr.api0.req.read.PreferenceList;
-import me.shakiba.readr.test.GenericRequestTest;
 
 import org.testng.annotations.Test;
 

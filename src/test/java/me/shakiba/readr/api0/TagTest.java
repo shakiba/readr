@@ -1,5 +1,7 @@
 package me.shakiba.readr.api0;
 
+import me.shakiba.readr.GenericRequestTest;
+import me.shakiba.readr.Sample;
 import me.shakiba.readr.api0.model.Api0Stream;
 import me.shakiba.readr.api0.model.Api0Tag;
 import me.shakiba.readr.api0.model.Api0TagList;
@@ -10,8 +12,6 @@ import me.shakiba.readr.api0.req.write.EditTag;
 import me.shakiba.readr.model.ItemIdShort;
 import me.shakiba.readr.model.StreamId;
 import me.shakiba.readr.model.StreamIdUserLabel;
-import me.shakiba.readr.test.GenericRequestTest;
-import me.shakiba.readr.test.Sample;
 
 import org.testng.Assert;
 

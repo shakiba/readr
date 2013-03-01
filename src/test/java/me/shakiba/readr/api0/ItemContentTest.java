@@ -1,9 +1,9 @@
 package me.shakiba.readr.api0;
 
+import me.shakiba.readr.GenericRequestTest;
+import me.shakiba.readr.Sample;
 import me.shakiba.readr.api0.model.Api0Stream;
 import me.shakiba.readr.api0.req.read.ItemContent;
-import me.shakiba.readr.test.GenericRequestTest;
-import me.shakiba.readr.test.Sample;
 
 //@Test
 public class ItemContentTest extends GenericRequestTest {

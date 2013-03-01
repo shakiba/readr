@@ -1,4 +1,4 @@
-package me.shakiba.readr.test;
+package me.shakiba.readr;
 
 import java.io.IOException;
 import java.io.InputStream;

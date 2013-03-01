@@ -1,10 +1,10 @@
 package me.shakiba.readr.atom;
 
+import me.shakiba.readr.GenericRequestTest;
+import me.shakiba.readr.Sample;
 import me.shakiba.readr.atom.model.Feed;
 import me.shakiba.readr.atom.req.AtomStream;
 import me.shakiba.readr.model.StreamId;
-import me.shakiba.readr.test.GenericRequestTest;
-import me.shakiba.readr.test.Sample;
 
 import org.testng.annotations.Test;
 
